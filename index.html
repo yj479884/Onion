@@ -681,7 +681,7 @@ function loadData(){
 
 
     // 2. 10등급 데이터 구성
-    loadData();
+    
 
 const GRADES = [
       { name: "비기너", minPct: 0, style: "bg-slate-700/80 border-slate-500 text-white" },
@@ -1330,6 +1330,8 @@ saveData();
 
     // 초기 실행
     window.onload = function() {
+      loadData();
+      
       generateStarrySky(); // 별빛 밤하늘 백그라운드 형성
       
       updateAngelState('dansun');
